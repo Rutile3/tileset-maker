@@ -1,0 +1,60 @@
+:root {
+    --dash: 6px;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.dropzone {
+    background: #fafafa;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.dropzone.dragover {
+    background: #f0f8ff;
+    border-color: #0d6efd !important;
+}
+
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+    gap: 8px;
+}
+
+.thumb {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumb .caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .55);
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#preview {
+    max-width: 100%;
+    height: auto;
+}
